@@ -76,7 +76,7 @@ var ReactImageUploadComponent = function (_React$Component) {
     key: 'componentDidUpdate',
     value: function componentDidUpdate(prevProps, prevState, snapshot) {
       if (prevState.files !== this.state.files) {
-        this.props.onChange(this.state.files, this.state.pictures);
+        this.props.onChange(this.state.files, this.state.pictures, this.state.exif);
       }
     }
 
