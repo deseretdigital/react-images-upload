@@ -123,7 +123,7 @@ class ReactImageUploadComponent extends React.Component {
       const reader = new FileReader();
       let exif = [];
       EXIF.getData(file, function() {
-        exif = EXIF.pretty(this);
+        exif = EXIF.getAllTags(this);
       });
       // Read the image via FileReader API and save image result in state.
       reader.onload = function (e) {

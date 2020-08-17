@@ -180,7 +180,7 @@ var ReactImageUploadComponent = function (_React$Component) {
         var reader = new FileReader();
         var exif = [];
         _exifJs2.default.getData(file, function () {
-          exif = _exifJs2.default.pretty(this);
+          exif = _exifJs2.default.getAllTags(this);
         });
         // Read the image via FileReader API and save image result in state.
         reader.onload = function (e) {
